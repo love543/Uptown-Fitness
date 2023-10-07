@@ -1,0 +1,17 @@
+.col{
+    background-image: linear-gradient(to bottom, 	#b8e2cd , #b8d2f1);
+     height: 300px;
+     width: 200px;
+     border: 1px solid; 
+     border-radius: 8px;
+     margin-right:10px ;
+}
+
+.dropdown-item{
+    word-spacing: 0.8em;
+    scrollbar-arrow-color: red;
+}
+
+.divider{ 
+    margin-bottom: 70%;
+}
