@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="./gym_logo.png">
+    <style>
+      body{
+        background-color: white;
+      }
+      .contact-form {
+        max-width: 500px;
+        margin: auto;
+      }
+      
+      .contact-form h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-form label {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      .contact-form input,
+      .contact-form textarea {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .contact-form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      .contact-form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      .contact-form textarea {
+        height: 150px;
+      }
+      
+    </style>
+</head>
+<body>
+    <header class="header">
+
+
+        <div class="left" style="text-align: center;">
+          <img class="demo" src="gym_logo.png" alt="logo">
+          <div>UpTown Fitness</div>
+        </div>
+        <div class="mid">
+          <ul class="navbar">
+            <li><a href="http://127.0.0.1:5500/Uptown-Fitness-main/index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/Uptown-Fitness-main/about.html">About</a></li>
+        <li><a href="http://127.0.0.1:5500/Uptown-Fitness-main/classes.html">Classes</a></li>
+        <li><a href="http://127.0.0.1:5500/Uptown-Fitness-main/trainers.html">Trainers</a></li>
+        <li><a href="http://127.0.0.1:5500/Uptown-Fitness-main/events.html">Events</a></li>
+        <li><a href="http://127.0.0.1:5500/Uptown-Fitness-main/blog.html">Blog</a></li>
+        <li><a href="http://127.0.0.1:5500/Uptown-Fitness-main/contact.html" class="active">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <button class="btn"><a style="color: aliceblue; text-decoration: none;" href="tel:+918331098232">Call
+              Us</a></button>
+          <button class="btn"><a style="color: aliceblue; text-decoration: none;" href="mailto:21cs2010@rgipt.ac.in">Mail
+              us</a></button>
+        </div>
+      </header>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <footer>
+        <div class="container-fluid  text-light py-5" style="background-color: black;">
+          <div class="footer">
+           
+               <div class="row">
+                   <div class="col-sm-12 text-center">
+      
+                   <img class="logo1" src="youtube logo.png" alt="vg" style="width:40px">
+                   <img class="logo1" src="insta logo.png" alt="vg"style="width:40px">
+                   <img class="logo1" src="twitter logo" alt="v"style="width:40px">
+                   <img class="logo1" src="facebook" alt="v"style="width:40px"><br>
+                   <span style="font-size: 12px;">Uptown Fitness © 2023 Tucson Fitness Pvt. Ltd.</span>
+               </div>
+               </div>
+           </div>
+       </div>
+      </footer>
+      
+</body>
+</html>
