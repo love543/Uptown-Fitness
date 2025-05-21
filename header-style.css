@@ -1,0 +1,220 @@
+/* Header and navigation styles to match attachment 2 */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  height: 80px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  width: 35px;
+  margin-top: 5px;
+}
+
+.left div {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.mid {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.navbar li a.active {
+  color: #dc3545;
+}
+
+.navbar li a:hover {
+  color: #dc3545;
+}
+
+.right {
+  display: flex;
+  margin-right: 20px;
+}
+
+.call-btn, .mail-btn {
+  background-color: #dc3545;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.call-btn:hover, .mail-btn:hover {
+  background-color: #c82333;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero section styles */
+.hero-container {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hero-content .hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-logo img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.hero-content .hero-title p {
+  margin-top: 10px;
+  font-size: 28px;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* Our Advantages section */
+.text-danger-important {
+  color: #dc3545 !important;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.h44 {
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.para2 {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #f8f9fa;
+  font-size: 16px;
+}
+
+/* Mobile menu styles */
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-toggle-label {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .mid {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-toggle:checked ~ .mid {
+    height: auto;
+    padding: 20px 0;
+  }
+  
+  .navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
