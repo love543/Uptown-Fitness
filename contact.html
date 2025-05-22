@@ -5,122 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./gym_logo.png">
-    <style>
-      body{
-        background-color: white;
-      }
-      .contact-form {
-        max-width: 500px;
-        margin: auto;
-      }
-      
-      .contact-form h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
-      }
-      
-      .contact-form form {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .contact-form label {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-      
-      .contact-form input,
-      .contact-form textarea {
-        padding: 10px;
-        font-size: 16px;
-        margin-bottom: 20px;
-        border: 2px solid #ccc;
-        border-radius: 4px;
-      }
-      
-      .contact-form input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        padding: 10px;
-        cursor: pointer;
-      }
-      
-      .contact-form input[type="submit"]:hover {
-        background-color: #45a049;
-      }
-      
-      .contact-form textarea {
-        height: 150px;
-      }
-      
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <header class="header">
-
-
-        <div class="left" style="text-align: center;">
-          <img class="demo" src="gym_logo.png" alt="logo">
+        <div class="left">
+          <img class="demo" src="gym_logo.png" alt="Gym Logo">
           <div>UpTown Fitness</div>
         </div>
+        
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+        </label>
+        
         <div class="mid">
           <ul class="navbar">
-        <li><a href="https://love543.github.io/Uptown-Fitness/index.html">Home</a></li>
-        <li><a href="https://love543.github.io/Uptown-Fitness/about.html">About</a></li>
-        <li><a href="https://love543.github.io/Uptown-Fitness/classes.html">Classes</a></li>
-        <li><a href="https://love543.github.io/Uptown-Fitness/trainers.html">Trainers</a></li>
-        <li><a href="https://love543.github.io/Uptown-Fitness/events.html">Events</a></li>
-        <li><a href="https://love543.github.io/Uptown-Fitness/blog.html">Blog</a></li>
-        <li><a href="https://love543.github.io/Uptown-Fitness/contact.html" class="active">Contact</a></li>
+            <li><a href="https://love543.github.io/Uptown-Fitness/index.html">Home</a></li>
+            <li><a href="https://love543.github.io/Uptown-Fitness/about.html">About</a></li>
+            <li><a href="https://love543.github.io/Uptown-Fitness/classes.html">Classes</a></li>
+            <li><a href="https://love543.github.io/Uptown-Fitness/trainers.html">Trainers</a></li>
+            <li><a href="https://love543.github.io/Uptown-Fitness/events.html">Events</a></li>
+            <li><a href="https://love543.github.io/Uptown-Fitness/blog.html">Blog</a></li>
+            <li><a href="https://love543.github.io/Uptown-Fitness/contact.html" class="active">Contact</a></li>
           </ul>
         </div>
         <div class="right">
-          <button class="btn"><a style="color: aliceblue; text-decoration: none;" href="tel:+918331098232">Call
-              Us</a></button>
-          <button class="btn"><a style="color: aliceblue; text-decoration: none;" href="mailto:21cs2010@rgipt.ac.in">Mail
-              us</a></button>
+          <a href="tel:+918006732510" class="btn"><i class="fas fa-phone-alt"></i> Call Us</a>
+          <a href="mailto:21cs2010@rgipt.ac.in" class="btn"><i class="fas fa-envelope"></i> Mail us</a>
         </div>
       </header>
-      <div class="contact-form">
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
-      
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
+      <div class="contact-container">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+        
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Gym City</p>
+          <p><i class="fas fa-phone"></i> +91 8331098232</p>
+          <p><i class="fas fa-envelope"></i> 21cs2010@rgipt.ac.in</p>
+          <p><i class="fas fa-clock"></i> Mon-Sat: 6:00 AM - 10:00 PM</p>
+          <p><i class="fas fa-clock"></i> Sunday: 8:00 AM - 8:00 PM</p>
+        </div>
       </div>
       <footer>
-        <div class="container-fluid  text-light py-5" style="background-color: black;">
-          <div class="footer">
-           
-               <div class="row">
-                   <div class="col-sm-12 text-center">
-      
-                   <img class="logo1" src="youtube logo.png" alt="vg" style="width:40px">
-                   <img class="logo1" src="insta logo.png" alt="vg"style="width:40px">
-                   <img class="logo1" src="twitter logo" alt="v"style="width:40px">
-                   <img class="logo1" src="facebook" alt="v"style="width:40px"><br>
-                   <span style="font-size: 12px;">Uptown Fitness © 2023 Tucson Fitness Pvt. Ltd.</span>
-               </div>
-               </div>
-           </div>
-       </div>
+        <div class="modern-footer">
+          <div class="social-icons-container">
+            <a href="#" class="footer-icon youtube" title="YouTube" aria-label="Visit our YouTube channel"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="footer-icon instagram" title="Instagram" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer-icon twitter" title="Twitter" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-icon facebook" title="Facebook" aria-label="Like us on Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="footer-copyright">Uptown Fitness © 2023 Tucson Fitness Pvt. Ltd.</div>
+        </div>
       </footer>
       
+      <!-- Font Awesome for social icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
