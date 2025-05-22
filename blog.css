@@ -46,7 +46,7 @@
     width: 60px;
   }
   
-  @media screen(max-width:620px) {
+  @media screen and (max-width: 620px) {
   }
   
   .mid {
@@ -120,6 +120,7 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 .header-new.fixed {
     -webkit-box-orient: vertical;
@@ -354,6 +355,7 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 .w-row:before, .w-row:after {
     content: " ";
@@ -684,3 +686,4 @@ a:-webkit-any-link {
 a:-webkit-any-link {
     cursor: pointer;
 }
+
