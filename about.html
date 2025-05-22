@@ -17,12 +17,14 @@
 
 <body>
   <header class="header">
-
-
-    <div class="left" style="text-align: center;">
-      <img class="demo" src="gym_logo.png" alt="logo">
+    <div class="left">
+      <img class="demo" src="gym_logo.png" alt="Gym Logo">
       <div>UpTown Fitness</div>
     </div>
+    
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">☰</label>
+    
     <div class="mid">
       <ul class="navbar">
         <li><a href="https://love543.github.io/Uptown-Fitness/index.html">Home</a></li>
@@ -35,15 +37,13 @@
       </ul>
     </div>
     <div class="right">
-      <button class="btn"><a style="color: aliceblue; text-decoration: none;" href="tel:+918331098232">Call
-          Us</a></button>
-      <button class="btn"><a style="color: aliceblue; text-decoration: none;" href="mailto:21cs2010@rgipt.ac.in">Mail
-          us</a></button>
+      <a href="tel:+918006732510" class="btn">Call Us</a>
+      <a href="mailto:21cs2010@rgipt.ac.in" class="btn">Mail us</a>
     </div>
   </header>
   <div class="container-fluid bg1">
     <div class="container text-center py-5">
-      <img src="gym images.jpg" style="width:74rem">
+      <img src="gym images.jpg" alt="Uptown Fitness gym interior" style="width:74rem">
     </div>
   </div>
   <div class="container-py-3">
@@ -96,22 +96,21 @@
   </div>
 </div>
   <footer>
-  <div class="container-fluid  text-light py-5" style="background-color: black;">
-    <div class="footer">
-     
-         <div class="row">
-             <div class="col-sm-12 text-center">
-
-             <img class="logo1" src="youtube logo.png" alt="vg" style="width:40px">
-             <img class="logo1" src="insta logo.png" alt="vg"style="width:40px">
-             <img class="logo1" src="twitter logo" alt="v"style="width:40px">
-             <img class="logo1" src="facebook" alt="v"style="width:40px"><br>
-             <span style="font-size: 12px;">Uptown Fitness © 2023 Tucson Fitness Pvt. Ltd.</span>
-         </div>
-         </div>
-     </div>
- </div>
-</footer>
+    <div class="modern-footer">
+      <div class="social-icons-container">
+        <a href="#" class="footer-icon youtube" title="YouTube" aria-label="Visit our YouTube channel"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="footer-icon instagram" title="Instagram" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer-icon twitter" title="Twitter" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="footer-icon facebook" title="Facebook" aria-label="Like us on Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="footer-copyright">Uptown Fitness © 2023 Tucson Fitness Pvt. Ltd.</div>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
