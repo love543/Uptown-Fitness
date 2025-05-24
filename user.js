@@ -111,10 +111,4 @@ app.get("/teacherhomepage",function(req,res){
 
 
 
-
-
-
-
-
-
 app.listen(5222);
