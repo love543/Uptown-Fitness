@@ -39,7 +39,8 @@
     </header>
 
     <div class="hero-container">
-        <video width="100%" autoplay muted loop class="video" webkit-playsinline playsinline>
+        <!-- Video element with playsinline for iOS Safari and fallback for Firefox -->
+        <video width="100%" autoplay muted loop class="video" webkit-playsinline>
             <source src="https://d301snvfck3zr8.cloudfront.net/fitlab-web220110.webm" type="video/webm">
             <source src="https://d301snvfck3zr8.cloudfront.net/fitlab-web220110.ogv" type="video/ogv">
             <source src="https://d301snvfck3zr8.cloudfront.net/fitlab-web220110.mp4" type="video/mp4">
@@ -220,6 +221,8 @@
           </div>
         </div>
       </footer>      
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
-</html> 
+</html>
